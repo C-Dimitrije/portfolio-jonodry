@@ -1,0 +1,86 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: rgb(0, 0, 0);
+  font: 10px/13px "Lucida Sans", sans-serif;
+}
+
+.flexes {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+}
+
+.logo {
+  width: 100%;
+  position: sticky;
+  top: 0%;
+  z-index: -1;
+  animation: fadeIn 2s;
+}
+
+.logo img {
+  max-width: fit-content;
+  width: 35%;
+}
+
+.wrap {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  width: 90vw;
+  gap: 50px;
+  background-color: black;
+  animation: fadeIn 2s;
+}
+
+.boxInner .titleBox {
+  font-family: "Raleway", sans-serif;
+  color: rgb(244, 244, 244);
+  font-weight: bold;
+  margin: auto;
+  background-color: black;
+  border-top: 3px solid rgba(255, 255, 255, 0);
+  transition: 0.2s all linear;
+}
+
+.boxInner .titleBox h1 {
+  letter-spacing: 3px;
+}
+
+.boxInner img {
+  width: 100%;
+  object-fit: cover;
+  aspect-ratio: 4/3;
+  transition: all 0.1s linear;
+  background-color: black;
+}
+
+.boxInner:hover > .titleBox{
+    border-top: 3px solid white;
+}
+
+
+@media only screen and (max-width: 1750px) {
+  .wrap {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media only screen and (max-width: 1050px) {
+  .wrap {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .wrap {
+    grid-template-columns: 1fr;
+  }
+}

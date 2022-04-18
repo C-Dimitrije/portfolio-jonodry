@@ -18,20 +18,26 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap"
       rel="stylesheet"
     />
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
     <script src="https://kit.fontawesome.com/dd4ecbb228.js" crossorigin="anonymous"></script>
 
-    <title>Jono Dry</title>
+    <title>Jono Dry Art</title>
   </head>
   <body>
     <div style="overflow-x: hidden">
-      <div class="main-logo">
+      <div class="main-logo animate__animated">
+          <a href="index.html">
         <img src="assets/img/logo.jpg" class="logo img-fluid" alt="" />
+    </a>
       </div>
       <div
         style="display: flex; justify-content: center; margin: 0%; padding: 0%"
       >
-        <nav class="navbar navbar-expand-sm navbar-light bg-light sticky-top">
-          <div class="navigation-menu container-fluid">
+        <nav class="navbar navbar-expand-sm navbar-light  sticky-top">
+          <div class="navigation-menu container-fluid animate__animated animate__fadeInUp animate__fast">
             <button
               class="navbar-toggler"
               type="button"
@@ -44,14 +50,9 @@
               <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <ul class="navbar-nav  mb-2 ">
                 <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="#"
-                    >Home</a
-                  >
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="#"
+                  <a class="nav-link active" aria-current="page" href="pages/gallery.html"
                     >Gallery</a
                   >
                 </li>
@@ -61,12 +62,12 @@
                   >
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="#"
+                  <a class="nav-link active" aria-current="page" href="pages/contact.html"
                     >Contact</a
                   >
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="#"
+                  <a class="nav-link active" aria-current="page" href="#sub"
                     >Subscribe</a
                   >
                 </li>
@@ -78,7 +79,7 @@
 
       <div class="img-content">
         <div class="row justify-content-center">
-          <div class="col-md">
+          <div class="col-md animate__animated animate__fadeInLeft animate__faster">
             <div
               id="carouselExampleIndicators"
               class="carousel slide"
@@ -122,7 +123,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md">
+          <div class="col-md animate__animated animate__fadeInRight animate__faster">
             <div
               id="carouselExampleSlidesOnly"
               class="carousel slide"
@@ -199,7 +200,7 @@
           </div>
       </div>
     </div>
-    <div class="footer">
+    <div class="footer" id="sub">
        <div class="contact-links">
             <a href=""><i class="fa-brands fa-instagram"></i></a>
             <a href=""><i class="fa-brands fa-youtube"></i></a>
@@ -208,13 +209,14 @@
        </div>
        <div class="input-form">
             <form>
-                <input type="text" id="fname" name="firstname" placeholder="FIRST NAME">
-                <input type="text" id="lname" name="lasname" placeholder="LAST NAME">
-                <input type="text" id="email" name="email" placeholder="E-MAIL"><br>
+                <input type="text" id="fname" name="firstname" placeholder="FIRST NAME" style="border-bottom: none;">
+                <input type="text" id="lname" name="lasname" placeholder="LAST NAME" style="border-top: none;">
+                
                 
             </form>
             <form class="input-form">
-                <button id="sub">Subscribe</button>
+                <input type="text" id="email" name="email" placeholder="E-MAIL" style="border-top: none;">
+                <button id="sub"><i class="fa-solid fa-check-double"></i></button>
             </form>
           </div>
        </div>
