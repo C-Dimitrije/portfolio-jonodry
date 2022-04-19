@@ -5,7 +5,7 @@
 body {
   margin: 0;
   padding: 0;
-  background: rgb(0, 0, 0);
+  background: rgb(255, 255, 255);
   font: 10px/13px "Lucida Sans", sans-serif;
 }
 
@@ -20,7 +20,6 @@ body {
 
 .logo {
   width: 100%;
-  position: sticky;
   top: 0%;
   z-index: -1;
   animation: fadeIn 2s;
@@ -28,7 +27,7 @@ body {
 
 .logo img {
   max-width: fit-content;
-  width: 35%;
+  width: 55%;
 }
 
 .wrap {
@@ -36,16 +35,14 @@ body {
   grid-template-columns: repeat(4, 1fr);
   width: 90vw;
   gap: 50px;
-  background-color: black;
   animation: fadeIn 2s;
 }
 
 .boxInner .titleBox {
   font-family: "Raleway", sans-serif;
-  color: rgb(244, 244, 244);
+  color: rgb(19, 19, 19);
   font-weight: bold;
   margin: auto;
-  background-color: black;
   border-top: 3px solid rgba(255, 255, 255, 0);
   transition: 0.2s all linear;
 }

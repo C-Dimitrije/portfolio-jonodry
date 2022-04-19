@@ -1,0 +1,17 @@
+*{
+    overflow-x: hidden;
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0%;
+    padding: 0;
+}
+
+.row{
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    padding: 5%;
+    padding-top: 2%;
+}
