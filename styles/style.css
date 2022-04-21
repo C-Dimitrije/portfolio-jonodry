@@ -56,6 +56,13 @@
   transition: all 0.5s linear;
 }
 
+
+.navbar-light .navbar-toggler {
+  color: rgba(0, 0, 0, 0);
+  border-color: rgba(0, 0, 0, 0); 
+}
+
+
 .img-content {
   width: 100vw;
   justify-content: center;
